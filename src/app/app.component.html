@@ -1,4 +1,9 @@
-
 <app-container>
-  <h1>Indexa</h1>
+  <app-encabezado></app-encabezado>
+
+  @for(letra of alfabeto; track letra){
+    <app-separador>{{letra}}</app-separador>
+
+  }
+
 </app-container>
