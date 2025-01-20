@@ -4,6 +4,7 @@ import { ContainerComponent } from './componentes/container/container.component'
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { SeparadorComponent } from './componentes/separador/separador.component';
 import { CommonModule } from '@angular/common';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { CommonModule } from '@angular/common';
             ContainerComponent,
             EncabezadoComponent, 
             SeparadorComponent,
+            ContactoComponent,
             CommonModule
           ],
   templateUrl: './app.component.html',
@@ -20,5 +22,6 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   
   alfabeto: string = "abcdefghijklmnñopqrstuvwxy"
-
+  nombrePrueba: string = "José"
+  telefonoPrueba: string = "7278889299"
 }
