@@ -3,7 +3,10 @@
 
   @for(letra of alfabeto; track letra){
     <app-separador>{{letra}}</app-separador>
-    <app-contacto [nombre]="nombrePrueba" [telefono]="telefonoPrueba"></app-contacto>
+
+    @for(contacto of filtrarContactosPorLetraInicial(letra); track contacto.id ){
+    <app-contacto [nombre]="contacto.nombre" [telefono]="contacto.telefono"></app-contacto>
+    }
   }
 
 </app-container>
