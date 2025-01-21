@@ -1,6 +1,10 @@
 <app-container>
   <app-encabezado></app-encabezado>
-
+  <input 
+    type="search"
+    placeholder="Digita lo que buscas"
+    [(ngModel)]="filtroTexto"
+  />
   @for(letra of alfabeto; track letra){
     <app-separador>{{letra}}</app-separador>
 
