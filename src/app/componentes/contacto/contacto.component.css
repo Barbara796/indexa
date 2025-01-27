@@ -16,8 +16,8 @@
     line-height: 150%;
 }
 
-.contato ul li button {
-    background-color: transparent;
+.contacto ul button {
+    background: transparent;
     border: none;
     cursor: pointer;
 }
